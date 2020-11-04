@@ -1,0 +1,117 @@
+$light-color: #ffffff;
+$dark-color-font: #3a3a3a;
+$blue-color-font: #0f237d;
+// colorBackGrounf = '#0F237D';
+// fontColorLeft = '#1E1E1E';
+// fontColorRight = '#0F237D';
+.entity-card {
+  background: $light-color;
+  box-shadow: 5px 3px 25px rgba(166, 166, 166, 0.15);
+  &-large {
+    width: 400px;
+    height: 421px;
+  }
+  &-medium {
+    width: 344px;
+    height: 421px;
+  }
+  &-small {
+    width: 320px;
+    height: 446px;
+  }
+  &-marginone{
+    margin-top: 77px;
+  }
+  &-margintwo{
+    margin-top: 47px;
+  }
+  &-margintrhee{
+    margin-top: 17px;
+  }
+}
+
+.card__header{
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: auto;
+  height: 43px;
+
+  &-title{
+    min-width: 81px;
+    text-align: right;
+    color: $blue-color-font;
+    margin: auto;
+  }
+  &-tags{
+    min-width: 180px;
+    font-weight: 800;
+    margin: auto;
+
+  }
+  &-large {
+    width: 400px;
+  }
+  &-medium {
+    width: 344px;
+  }
+  &-small {
+    width: 320px;
+  }
+}
+.card__description {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $dark-color-font;
+  margin: auto;
+  &-small {
+    width: 280px;
+  }
+  &-medium {
+    width: 304px;
+  }
+  &-large {
+    width: 314px;
+  }
+}
+.card__img{
+  transition: transform 0.2s;
+  height: 200px;
+  &-large {
+    width: 400px;
+  }
+  &-medium {
+    width: 344px;
+  }
+  &-small {
+    width: 320px;
+  }
+}
+.card__img__rupper{
+  overflow: hidden; 
+  height: 200px;
+}
+
+img:hover {
+  transform: scale(1.25);
+}
+
+// .companies-color {
+//   // background-color: $dark-bg-color;
+//   .card__header-left {
+
+//   }
+// }
+// .funds-color {
+
+// }
+// .clubs-color {
+
+// }

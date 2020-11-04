@@ -1,0 +1,77 @@
+$black-font-color: #1e1e1e;
+$brown-font-color: #3a3a3a;
+
+.page {
+  margin: auto;
+  &-small {
+    width: 320px;
+  }
+  &-medium {
+    width: 708px;
+  }
+  &-large {
+    width: 1240px;
+  }
+}
+.page__header{
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  color: $black-font-color;
+  &-large {
+    width: 578px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  &-small {
+    width: 320px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+.page__peregra {
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $brown-font-color;
+  &-small {
+    width: 320px;
+  }
+  &-large {
+    width: 596px;
+  }
+}
+.page__img__rupper{
+  width: 140px;
+}
+.img {
+  &-small {
+    width: 110px;
+    height: 96px;
+  }
+  &-medium {
+    width: 122px;
+    height: 105px;
+  }
+  &-large {
+    width: 156px;
+    height: 134px;
+  }
+}
+
+.list {
+  &.-small {
+    width: 340px;
+    margin-top: 59px;
+  }
+  &.-medium {
+    width: 708px;
+    margin-top: 46px;
+  }
+  &.-large {
+    width: 1240px;
+    margin-top: 17px;
+  }
+}

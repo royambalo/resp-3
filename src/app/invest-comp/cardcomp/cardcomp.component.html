@@ -1,0 +1,44 @@
+<div 
+class="entity-card"
+ngClass.xs="entity-card-small"
+ngClass.gt-xs="entity-card-medium"
+ngClass.gt-md="entity-card-large"
+fxLayout="row wrap"
+fxLayout.xs="column"
+[className]="i===0?'entity-card-marginone':i===1?'entity-card-margintwo':'entity-card-margintrhee'"
+>
+  <div class="card__img__rupper">
+    <img
+      class="card__img"
+      ngClass.xs="card__img-small"
+      ngClass.gt-xs="card__img-medium"
+      ngClass.gt-md="card__img-large"
+      src="{{ item.url }}"
+    />
+  </div>
+  <div
+    class="card__header {{item.type}}-color"
+    ngClass.xs="card__header-small"
+    ngClass.gt-xs="card__header-medium"
+    ngClass.gt-md="card__header-large"
+    fxflex
+    fxLayoutAlign="space-between"
+    fxLayout="row"    
+    [ngStyle]="{ 'background-color': colorBackGrounf }"
+  >
+    <div class="card__header-title" [ngStyle]="{ color: fontColorLeft }">
+      {{ item.name }}
+    </div>
+    <div class="card__header-tags" [ngStyle]="{ color: fontColorRight }">
+      {{ item.sectorsName }}
+    </div>
+  </div>
+  <div
+    class="card__description"
+    ngClass.xs="card__description-small"
+    ngClass.gt-xs="card__description-medium"
+    ngClass.gt-md="card__description-large"
+    id="overview"
+    [innerHTML]="item.overview | slice: 0:200"
+  ></div>
+</div>

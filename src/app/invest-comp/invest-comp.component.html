@@ -1,0 +1,61 @@
+<div
+  class="page"
+  flexlayout="column"
+  ngClass.xs="page-small"
+  ngClass.gt-xs="page-medium"
+  ngClass.gt-md="page-large"
+>
+  <div fxLayout.xs="column" fxLayoutAlign="space-between" fxLayout.gt-xs="row">
+    <div
+      fxFlexOrder="1"
+      fxFlexOrder.xs="2"
+      fxFlexOffset.xs="32px"
+      fxLayout="column"
+    >
+      <h1 class="page__header" ngClass.xs="page__header-small" ngClass.gt-xs="page__header-large">
+        Investments opportunities: Companies & Venture Fundse
+      </h1>
+      <div
+        ngClass.xs="page__peregra-small"
+        class="page__peregra"
+        ngClass.gt-xs="page__peregra-large"
+        fxFlexOffset.xs="19px"
+        fxFlexOffset.gt-xs="32px"
+      >
+        Invest with Us: Start-Ups, Funds & Products We’ve done all the hard work
+        for you. Leverage our expertise and thorough due-diligence process and
+        find your next investment opportunity here
+      </div>
+    </div>
+    <div
+      fxLayoutAlign.sm="center end"
+      class="page__img__rupper"
+      fxFlexOrder="2"
+      fxFlexOrder.xs="1"
+    >
+      <img
+        ngClass.xs="img-small"
+        ngClass.gt-xs="img-medium"
+        ngClass.gt-md="img-large"
+        src="https://www.investination.com/assets/img/model-ill2.png"
+        alt="iqon"
+      />
+    </div>
+  </div>
+
+  <div
+    class="list"
+    fxLayoutAlign="space-between"
+    fxLayout.xs="column"
+    fxLayout.gt-xs="row wrap"
+    ngClass.xs="-small"
+    ngClass.gt-xs="-medium"
+    ngClass.gt-md="-large"
+  >
+    <app-cardcomp
+      *ngFor="let item of serviceCard.cards | async; let i = index"
+      [item]="item"
+      [i]="i % 3"
+    ></app-cardcomp>
+  </div>
+</div>
